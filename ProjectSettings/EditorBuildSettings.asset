@@ -5,8 +5,25 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
+    path: Assets/Scenes/TitleScreen.unity
+    guid: a0f1213eb2b6269409398b7256742fa3
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: Assets/Scenes/Underground.unity
+    guid: afa668e42b55c9e42acc27b47266d20a
+  - enabled: 0
+    path: Assets/Scenes/StrangeArea.unity
+    guid: 3db82ca62d8d6ae429e55c58579f07b9
+  - enabled: 0
+    path: Assets/Scenes/FinalScene.unity
+    guid: 3623063900ef02443a3493cbcaac3faf
+  - enabled: 0
+    path: Assets/Scenes/EndScreen.unity
+    guid: d98f79115950d0748bd12ca0f0b74d1a
+  - enabled: 1
+    path: Assets/Scenes/AzureLotusLevel1.unity
+    guid: 232f5ddea52f6c14280d1fe440c59364
+  m_configObjects: {}
