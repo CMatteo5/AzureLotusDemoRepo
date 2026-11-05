@@ -74,6 +74,7 @@ public class PlayerMovment : MonoBehaviour
 
     private void OnFire()
     {
+        //UnityEngine.Debug.Log("Fire");
         RaycastHit hit;
         bool interactCheck = Physics.Raycast(new Ray(transform.position, transform.forward), out hit, 2f);
         if (interactCheck && hit.transform.CompareTag("Interactable"))
