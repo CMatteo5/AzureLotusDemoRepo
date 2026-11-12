@@ -238076,10 +238076,18 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: ebed5c329e7f00c408aef4dce1910bd2, type: 2}
+    - target: {fileID: -5076564172452761203, guid: 46552ee44d26efa41b7f631e6bcc7dc8, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: -1639853767035919866, guid: 46552ee44d26efa41b7f631e6bcc7dc8, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: ebed5c329e7f00c408aef4dce1910bd2, type: 2}
+    - target: {fileID: -1406780004057290553, guid: 46552ee44d26efa41b7f631e6bcc7dc8, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 46552ee44d26efa41b7f631e6bcc7dc8, type: 3}
       propertyPath: m_Name
       value: RottenBearPS1
@@ -238091,33 +238099,24 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 46552ee44d26efa41b7f631e6bcc7dc8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1412338916}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 46552ee44d26efa41b7f631e6bcc7dc8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1412338918}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 46552ee44d26efa41b7f631e6bcc7dc8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1412338917}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 46552ee44d26efa41b7f631e6bcc7dc8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1412338920}
-    - targetCorrespondingSourceObject: {fileID: -1406780004057290553, guid: 46552ee44d26efa41b7f631e6bcc7dc8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1414568836}
     - targetCorrespondingSourceObject: {fileID: -1406780004057290553, guid: 46552ee44d26efa41b7f631e6bcc7dc8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1414568835}
     - targetCorrespondingSourceObject: {fileID: -1406780004057290553, guid: 46552ee44d26efa41b7f631e6bcc7dc8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1414568834}
-    - targetCorrespondingSourceObject: {fileID: -5076564172452761203, guid: 46552ee44d26efa41b7f631e6bcc7dc8, type: 3}
+    - targetCorrespondingSourceObject: {fileID: -1406780004057290553, guid: 46552ee44d26efa41b7f631e6bcc7dc8, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 826258789}
+      addedObject: {fileID: 1414568836}
     - targetCorrespondingSourceObject: {fileID: -5076564172452761203, guid: 46552ee44d26efa41b7f631e6bcc7dc8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 826258788}
     - targetCorrespondingSourceObject: {fileID: -5076564172452761203, guid: 46552ee44d26efa41b7f631e6bcc7dc8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 826258787}
+    - targetCorrespondingSourceObject: {fileID: -5076564172452761203, guid: 46552ee44d26efa41b7f631e6bcc7dc8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 826258789}
   m_SourcePrefab: {fileID: 100100000, guid: 46552ee44d26efa41b7f631e6bcc7dc8, type: 3}
 --- !u!1 &583608785
 GameObject:
@@ -337533,7 +337532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6260d6c3a14a89a48bc81c0e48658ffe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChangeScene
-  SceneName: EndScene
+  SceneName: EndScreen
 --- !u!114 &826258788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -337546,8 +337545,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 624c624fad6e31346b16f56566480265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractAddon
---- !u!64 &826258789
-MeshCollider:
+--- !u!65 &826258789
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -337564,10 +337563,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4797432144263011620, guid: 46552ee44d26efa41b7f631e6bcc7dc8, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 0.016790124, y: 0.019206893, z: 0.019314362}
+  m_Center: {x: -0.00000011920929, y: -0.001208862, z: 0.0012621196}
 --- !u!1 &826503148
 GameObject:
   m_ObjectHideFlags: 0
@@ -589613,53 +589611,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5895c368ff59b6a4f8956a0e2cdaccfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EndGame
---- !u!114 &1412338917
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1412338914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6260d6c3a14a89a48bc81c0e48658ffe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeScene
-  SceneName: EndScene
---- !u!114 &1412338918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1412338914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 624c624fad6e31346b16f56566480265, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InteractAddon
---- !u!64 &1412338920
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1412338914}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &1412348687
 GameObject:
   m_ObjectHideFlags: 0
@@ -591357,7 +591308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6260d6c3a14a89a48bc81c0e48658ffe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChangeScene
-  SceneName: EndScene
+  SceneName: EndScreen
 --- !u!114 &1414568835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -591370,8 +591321,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 624c624fad6e31346b16f56566480265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractAddon
---- !u!64 &1414568836
-MeshCollider:
+--- !u!65 &1414568836
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -591388,10 +591339,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -436613129746884727, guid: 46552ee44d26efa41b7f631e6bcc7dc8, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 0.019372694, y: 0.025357023, z: 0.018678028}
+  m_Center: {x: -0.0016215299, y: -0.00000047683716, z: 0.0029553727}
 --- !u!1 &1415009878
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,6 +9,7 @@ public class ChangeScene : MonoBehaviour, InteractBehavior
     public string SceneName;
     public void onInteract()
     {
+        Debug.Log("ChangeScene: " + SceneName);
         SceneManager.LoadScene(SceneName);
     }
 }
